@@ -48,7 +48,7 @@ NLPCC2016－Chinese Word Segmentation for Weibo Text
 ### 根据训练数据训练模型
 * 训练数据说明
     * 由上一步得到的训练数据格式如下
-    * ![train data](https://github.com/sunflowerlyb/nlpcc2016/raw/master/others/train_data.png)
+    * ![train data](https://github.com/sunflowerlyb/nlpcc2016/raw/master/others/train_data.png) 
     * 文件格式描述
         * 每行对应13位特征值
         * 从左到右（具体特征含义及计算方法见[论文](https://github.com/sunflowerlyb/nlpcc2016/raw/master/coding/A Feature-Rich CRF Segmenter for Chinese Micro-Blog.pdf)）：
