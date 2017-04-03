@@ -3,7 +3,7 @@ nlpcc2016－Chinese Word Segmentation for Weibo Text
 ## 说明
 * 本程序是我们参加[nlpcc2016](http://tcci.ccf.org.cn/conference/2016/pages/page05_evadata.html)的微博中文切分任务所使用的系统。
 * 语言环境：python2.7.10
-* CRF模型工具包：
+* CRF模型工具包：[CRF](https://taku910.github.io/crfpp/)
 
 ## 系统流程介绍
 * 本系统采用条件随机场训练模型，包括三个步骤
