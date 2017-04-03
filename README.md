@@ -64,9 +64,13 @@ NLPCC2016－Chinese Word Segmentation for Weibo Text
 
 * 使用训练数据训练模型
     * 训练模型的命令：crf_learn -m 2000 -p 6 template train.data result/template_model > result/log/log_template.txt&
-        * -m表示最大迭代次数，本系统设置为2000，-p表示开启的进程数可以根据服务器使用情况改变，，template表示模版，训练的模型存在result问价下，并将训练日志存入log文件
+        * -m表示最大迭代次数，本系统设置为2000
+        * -p表示开启的进程数可以根据服务器使用情况改变
+        * template表示模版
+        * 训练的模型存在result问价下，并将训练日志存入log文件
 ### 使用模型切词
 * 同样使用用coding/generate_feature.py提取测试数据特征并生成和训练数据相同格式的文件tests.data
 * 使用模型进行标注的命令crf_test -m result/template_model tests.data>result/template_model_tests.txt&
-    * -m表示使用的模型文件，tests.data表示已经提取完特征需要预测的文本文件名，将预测结果存入result/template_model_tests.txt
+    * -m表示使用的模型文件
+    * tests.data表示已经提取完特征需要预测的文本文件名，将预测结果存入result/template_model_tests.txt
 # 以上为整个系统流程，谢谢～
