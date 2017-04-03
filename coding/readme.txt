@@ -7,4 +7,4 @@ post_processed.py为后处理文件，详情见论文
 temp文件夹为模型所使用的模版文件
 
 
-submission.pdf为最终提交的论文
+A Feature-Rich CRF Segmenter for Chinese Micro-Blog.pdf为最终提交的论文
