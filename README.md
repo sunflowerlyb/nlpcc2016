@@ -45,23 +45,28 @@ NLPCC2016－Chinese Word Segmentation for Weibo Text
     * 生成训练数据：data文件夹和generate_feature.py必须在同级文件夹
          * 直接执行python generate_feature.py
          * ![generate feature](https://github.com/sunflowerlyb/nlpcc2016/raw/master/others/generate_feature.png)
-* 根据训练数据训练模型
-    * 训练数据说明
-        * 由上一步得到的训练数据格式如下：
-        * 文件格式描述
-            * 每个汉字后面有13位数字，分别对应13位特征值
-            * 非0数字k表示：给当前字打标签时考虑上下文k个窗口的对应特征的信息，目前大部分考虑1个窗口
-            * 0表示不考虑该特征的
-            * 从左到右：
-                * 第1位字特征
-                * 第23456共五位对应五个av特征
-                * 第7位字类型特征
-                * 第8位表概率特征
-                * 第9表当前字和前一个字是否为叠字
-                * 10、未用
-                * 第11、12位表前后熵特征
-                * 第13位表字类型特征（字向量训练好之后open会使用该特征）
+### 根据训练数据训练模型
+* 训练数据说明
+    * 由上一步得到的训练数据格式如下：
+    * 文件格式描述
+        * 每个汉字后面有13位数字，分别对应13位特征值
+        * 非0数字k表示：给当前字打标签时考虑上下文k个窗口的对应特征的信息，目前大部分考虑1个窗口
+        * 0表示不考虑该特征的
+        * 从左到右：
+            * 第1位字特征
+            * 第23456共五位对应五个av特征
+            * 第7位字类型特征
+            * 第8位表概率特征
+            * 第9表当前字和前一个字是否为叠字
+            * 10、未用
+            * 第11、12位表前后熵特征
+            * 第13位表字类型特征（字向量训练好之后open会使用该特征）
 
-    * 使用训练数据训练模型
-    
-* 使用模型切词
+* 使用训练数据训练模型
+    * 训练模型的命令：crf_learn -m 2000 -p 6 template train.data result/template_model > result/log/log_template.txt&
+        * -m表示最大迭代次数，本系统设置为2000，-p表示开启的进程数可以根据服务器使用情况改变，，template表示模版，训练的模型存在result问价下，并将训练日志存入log文件
+### 使用模型切词
+* 同样使用用coding/generate_feature.py提取测试数据特征并生成和训练数据相同格式的文件tests.data
+* 使用模型进行标注的命令crf_test -m result/template_model tests.data>result/template_model_tests.txt&
+    * -m表示使用的模型文件，tests.data表示已经提取完特征需要预测的文本文件名，将预测结果存入result/template_model_tests.txt
+# 以上为整个系统流程，谢谢～
