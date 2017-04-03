@@ -47,12 +47,11 @@ NLPCC2016－Chinese Word Segmentation for Weibo Text
          * ![generate feature](https://github.com/sunflowerlyb/nlpcc2016/raw/master/others/generate_feature.png)
 ### 根据训练数据训练模型
 * 训练数据说明
-    * 由上一步得到的训练数据格式如下：
+    * 由上一步得到的训练数据格式如下
+    * ![train data](https://github.com/sunflowerlyb/nlpcc2016/raw/master/others/train_data.png)
     * 文件格式描述
-        * 每个汉字后面有13位数字，分别对应13位特征值
-        * 非0数字k表示：给当前字打标签时考虑上下文k个窗口的对应特征的信息，目前大部分考虑1个窗口
-        * 0表示不考虑该特征的
-        * 从左到右：
+        * 每行对应13位特征值
+        * 从左到右（具体特征含义及计算方法见[论文](https://github.com/sunflowerlyb/nlpcc2016/raw/master/coding/A Feature-Rich CRF Segmenter for Chinese Micro-Blog.pdf)）：
             * 第1位字特征
             * 第23456共五位对应五个av特征
             * 第7位字类型特征
