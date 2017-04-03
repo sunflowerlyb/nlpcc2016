@@ -1,4 +1,4 @@
-nlpcc2016－Chinese Word Segmentation for Weibo Text
+NLPCC2016－Chinese Word Segmentation for Weibo Text
 =========
 ## 说明
 * 本程序是我们参加[nlpcc2016](http://tcci.ccf.org.cn/conference/2016/pages/page05_evadata.html)的微博中文切分任务所使用的系统。
@@ -14,7 +14,7 @@ nlpcc2016－Chinese Word Segmentation for Weibo Text
 ## 代码实现
 * 特征提取，生成训练数据
     * 由coding/generate_feature.py提取特征并生成训练数据，生成训练数据所使用的文件见data文件夹，生成的过程数据见data/generate_data文件夹，最终用于训练模型的数据
-        * 数据准备及说明(各特征的意义參考论文：A Feature-Rich CRF Segmenter for Chinese Micro-Blog.pdf)
+        * 数据准备及说明(各特征的意义參考论文：A Feature-Rich CRF Segmenter for Chinese Micro-Blog.pdf)
             * data文件夹
                 * 官方发布数据，文件格式如官方给出文件，不需要做预先做任何处理
                     * 训练数据文件名是固定的：train.dat
