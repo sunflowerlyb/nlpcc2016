@@ -26,6 +26,7 @@ NLPCC2016－Chinese Word Segmentation for Weibo Text
                 * freq.txt : 用于生成词频的文件，计算字典位置特征，内容为train.dat如果需要更多的语料，则直接追加到该文件中即可
                 * text.txt : av特征为非监督特征，如果不存在该文件，系统直接使用train.dat生成av相关的数据（closed任务），在open任务上，如果需要增加额外的数据，则将数据直接拷贝到该文件中即可，系统会自动预处理空格。                    
                 * freq.txt : 用于生成词频的文件，计算字典位置特征，内容为train.dat如果需要更多的语料，则直接追加到该文件中
+            ----
             * 生成的训练数据
                 * train.data: 提取过特征的训练数据
                 * dev.data：提取过特征的发展集数据
