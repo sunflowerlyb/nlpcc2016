@@ -6,14 +6,14 @@ NLPCC2016－Chinese Word Segmentation for Weibo Text
 * CRF模型工具包：[CRF](https://taku910.github.io/crfpp/)
 
 ## 系统流程介绍
-* 本系统采用条件随机场训练模型，包括三个步骤
-    * 特征提取，生成特征训练数据
-    * 根据训练数据训练得到分词模型
-    * 使用模型对文本进行切词
+### 本系统采用条件随机场训练模型，包括三个步骤
+* 特征提取，生成特征训练数据
+* 根据训练数据训练得到分词模型
+* 使用模型对文本进行切词
   
 ## 代码实现
-* 特征提取，生成训练数据
-    * 由coding/generate_feature.py提取特征并生成训练数据
+### 特征提取，生成训练数据
+* 由coding/generate_feature.py提取特征并生成训练数据
         * 数据准备及说明(各特征的意义參考论文：A Feature-Rich CRF Segmenter for Chinese Micro-Blog.pdf)
             * data文件夹
                 * 官方发布数据，文件格式如官方给出文件，不需要做预先做任何处理
