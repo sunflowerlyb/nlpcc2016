@@ -44,7 +44,7 @@ NLPCC2016－Chinese Word Segmentation for Weibo Text
             ----
     * 生成训练数据：data文件夹和generate_feature.py必须在同级文件夹
          * 直接执行python generate_feature.py
-         * ![generate feature](https://github.com/sunflowerlyb/nlpcc2016/others/generate_feature.png)
+         * ![generate feature](https://github.com/sunflowerlyb/nlpcc2016/raw/master/others/generate_feature.png)
 * 根据训练数据训练模型
     * 训练数据说明
         * 由上一步得到的训练数据格式如下：
