@@ -21,7 +21,7 @@ NLPCC2016－Chinese Word Segmentation for Weibo Text
                 * 训练数据文件名是固定的：train.dat
                 * 发展集数据文件名：dev.dat
                 * 测试集文件名：test.dat
-            --
+            ___
             * 生成特征所需要的其他文件（均为open任务设置的额外数据，在semi及closed任务上，这些特征都是自动提取train.dat中的数据，对应的文件置空即可）
                 * dictionary.txt : 用于open任务上的字典特征（评测未用该特征，改用了字典位置特征），如果额外的数据生成此特征，则将对应的词加入该文件，每行一个词。如果不需要将此文件夹置空即可
                 * ext.txt :  同样用于open任务上的数据，用于生成条件熵的语料，数据为切好词的数据（格式同train.dat），如果不需要将此文件夹置空即可
