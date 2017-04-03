@@ -14,8 +14,10 @@ NLPCC2016－Chinese Word Segmentation for Weibo Text
 ## 代码实现
 ### 特征提取，生成训练数据
 * 由coding/generate_feature.py提取特征并生成训练数据
+
     =
     * 数据准备及说明(各特征的意义參考论文：A Feature-Rich CRF Segmenter for Chinese Micro-Blog.pdf)
+    
     =
         * data文件夹
             =
