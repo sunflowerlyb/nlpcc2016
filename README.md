@@ -51,7 +51,7 @@ NLPCC2016－Chinese Word Segmentation for Weibo Text
     * ![train data](https://github.com/sunflowerlyb/nlpcc2016/raw/master/others/train_data.png) 
     * 文件格式描述
         * 每行对应13位特征值
-        * 从左到右，具体特征含义及计算方法见[论文](https://github.com/sunflowerlyb/nlpcc2016/raw/master/coding/A Feature-Rich CRF Segmenter for Chinese Micro-Blog.pdf)
+        * 从左到右，具体特征含义及计算方法见
             * 第1位字特征
             * 第23456共五位对应五个av特征
             * 第7位字类型特征
