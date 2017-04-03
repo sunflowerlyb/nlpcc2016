@@ -41,6 +41,7 @@ NLPCC2016－Chinese Word Segmentation for Weibo Text
                 * ef_feature.json: 条件熵特征中间数据文件，为了下次生成数据方便，会在第一次执行的时候自动生成。如果需要重新生成，只需要手工删除即可。
                 * fredist.json: 根据freq.txt生成的词频文件
                 * sa.json: 根据前缀字符串算法的到的整个文件的排序结果。
+            ----
     * 生成训练数据：data文件夹和generate_feature.py必须在同级文件夹
          * 直接执行python generate_feature.py
             
