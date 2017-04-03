@@ -764,13 +764,13 @@ if __name__ == '__main__':
     若文件夹中有json文件，那么是中间生成数据，如果删掉，程序会自动重新生成。
     
     #标记数据在原来字上加tag，字典dict，前后条件墒，av特征信息
-    #运行 python -u get_feature.py就不会出现print延迟问题了
+    #运行 python -u generate_feature.py就不会出现print延迟问题了
 
     若已经有初步标记好的数据，可以把flag设为0，但是不建议用，因为每个人准备的数据可能有什么小差错
     '''
     start_time1 = time.time()
     print 'start...'
-    flag = 1
+    flag = 1#用来表示，是否需要format数据的flag标识
     tag = 1#tag为0时不用av特征，为1时用
     tt = add_tag('open2', flag, tag)
     end_time = time.time()
