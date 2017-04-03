@@ -1,5 +1,9 @@
-# nlpcc2016－Chinese Word Segmentation for Weibo Text
-This task aims to evaluate the techniques of Chinese word segmentation for Weibo texts. Since there exist different annotation criterions to segment Chinese words, these criterions should be considered to judge the performance of a word segmenter. Different with the traditional single evaluation measure for word segmentation, this task introduces a new criterion to evaluate the multi-granularity word segmentation.
+nlpcc2016－Chinese Word Segmentation for Weibo Text
+=========
+
+# 说明
+本程序是我们参加nlpcc2016的中文切分任务的系统。
+
 
 # 简介
    中文信息处理一般以词为单位,但其书写方式并不像西方语言那样以空格隔开, 因此中文分词就成了其他中文信息处理的基础,并且在很多领域都有广泛的 应用,包括搜索引擎、机器翻译(MT)、语音合成、自动分类、自动摘要、自动校对等等。经过多年的研究,汉语自动分词技术在处理传统文本语料上取得了不错的成绩。然而,这些分词方法在处理网络文本上却达不到要求,其主要原因是 传统的文本主要来自于比较规范的新闻报道和文学作品,缺乏大量的网络词汇。
